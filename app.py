@@ -3,10 +3,10 @@ import os
 import random
 import openai
 import datetime
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 # 環境変数をロード
-#load_dotenv()
+load_dotenv()
 
 # OpenAI APIキーを環境変数から取得
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
