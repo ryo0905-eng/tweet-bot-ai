@@ -17,6 +17,7 @@ jobs:
       run: |
         echo "DEPLOY_HOST=${{ secrets.DEPLOY_HOST }}"
         echo "DEPLOY_USER=${{ secrets.DEPLOY_USER }}"
+        echo "DEPLOY_KEY set: ${{ secrets.DEPLOY_KEY != '' }}"
 
     - name: Raspberry Pi に SSH でデプロイ
       uses: appleboy/ssh-action@v0.1.10
